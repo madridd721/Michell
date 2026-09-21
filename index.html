@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para la más especial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css/style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <main class="scene">
+    <div class="glow glow-a"></div><div class="glow glow-b"></div>
+    <section class="intro" id="intro">
+      <p class="eyebrow">Un pequeño detalle para usted</p>
+      <h1>Para la más especial</h1>
+      <p class="recipient">Michell Trigueros <span aria-hidden="true">🌻</span></p>
+      <button class="start" id="startBtn"><span>Toque para iniciar</span><span class="arrow">↓</span></button>
+    </section>
+    <section class="garden hidden" id="garden">
+      <div class="stars"></div>
+      <div class="flower-wrap" aria-hidden="true">
+        <div class="flower">
+          <span class="petal p1"></span><span class="petal p2"></span><span class="petal p3"></span><span class="petal p4"></span>
+          <span class="petal p5"></span><span class="petal p6"></span><span class="petal p7"></span><span class="petal p8"></span><span class="center"></span>
+        </div>
+        <div class="stem"></div><div class="leaf leaf-a"></div><div class="leaf leaf-b"></div>
+      </div>
+      <div class="message"><p class="small">Para usted,</p><h2>Michell Trigueros <span aria-hidden="true">🌻</span></h2><p class="phrase" id="phrase"></p></div>
+      <div class="actions"><button class="card-button" id="letterBtn" aria-label="Abrir carta" title="Abrir carta">💌</button><button class="close-button" id="closeBtn" aria-label="Volver al inicio" title="Volver al inicio">✕</button></div>
+      <button class="music" id="musicToggle" aria-label="Activar música"><span class="music-dot" id="musicDot"></span><span id="musicStatus">Música pausada</span></button>
+    </section>
+  </main>
+  <div class="modal hidden" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <article class="letter">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar carta">×</button>
+      <div class="letter-top">Para usted, Michell</div><h2 id="letterTitle">Un pequeño detalle</h2>
+      <div class="letter-body" id="letterBody">
+        <p>No quiero que este detalle sea una forma de pedirle nada. No quiero que sienta que tiene que responderme algo, ni que detrás de este pequeño detalle hay una expectativa. Solo quería tener un pequeño gesto con usted y recordarle que hay alguien que se alegra de verla sonreír, que piensa en usted y que genuinamente desea verla bien.</p>
+        <p>Después de todo lo que hemos vivido, de todo lo que pasó y de todo lo que todavía estamos aprendiendo, hay algo que para mí sigue siendo muy bonito: que usted siga siendo alguien especial para mí.</p>
+        <p>Y aunque no sé qué nos tenga preparado la vida, sí sé que me gusta estar presente en ella. Sin prisas, sin exigirle respuestas y sin intentar cambiar lo que usted siente.</p>
+        <p>Solo quiero que este detalle le recuerde que, incluso en medio de todo lo que está viviendo, merece lo más bonito del mundo, merece sonreír y merece sentirse querida.</p>
+        <p>Espero que le guste. La amo.</p>
+      </div>
+      <p class="signature">David Madrid</p><div class="letter-flower" aria-hidden="true">🌻</div>
+    </article>
+  </div>
+  <audio id="music" preload="auto" loop><source src="../donde-nadre-pueda-ir.mp3/ssstik.io_1789963013847.mp3" type="audio/mpeg"></audio>
+  <script src="../script.js/script.js"></script>
+</body>
+</html>
